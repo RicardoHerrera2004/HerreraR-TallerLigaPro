@@ -27,5 +27,4 @@ app.MapControllerRoute(
 app.Run();
 
 
-//Este es la validaci�n de los cambios de Git
-//Nueva comprobacion
+
