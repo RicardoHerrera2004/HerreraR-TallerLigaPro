@@ -7,6 +7,8 @@ namespace HerreraR_TallerLigaPro.Models
     {
         [DisplayName("Imagen del equipo ")]
         public string ImagenEquipo { get; set; }
+        [DisplayName("Descripción del equipo ")]
+        public string DescripcionEquipo { get; set; }
         [Key]
         public int Id { get; set; }
         [MaxLength(100)]

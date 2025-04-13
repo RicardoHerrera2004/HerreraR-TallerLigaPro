@@ -6,9 +6,10 @@
 
 <h1>ListaEquipos</h1>
 
-<p>
+@*<p>
 	<a class="btn btn-info" asp-action="Create">Create New</a>
-</p>
+</p>*@
+
 <table class="table">
 	<thead>
 		<tr>
@@ -62,7 +63,7 @@
 					@Html.DisplayFor(modelItem => item.Puntos)
 				</td>
 				<td>
-					@Html.ActionLink("Ver Información del Equipo", "EditarEquipo", new { id=item.Id }, new { @class = "btn btn-success" }) |
+					@Html.ActionLink("Ver Información del Equipo", "EditarEquipo", new { id = item.Id }, new { @class = "btn btn-success" }) |
 				</td>
 			</tr>
 		}
