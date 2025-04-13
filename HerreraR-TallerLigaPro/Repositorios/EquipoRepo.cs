@@ -33,6 +33,7 @@ namespace HerreraR_TallerLigaPro.Repositorios
                 PartidosGanados = 10,
                 PartidosEmpatados = 0,
                 PartidosPerdidos = 0,
+                ImagenEquipo = "LDU.jpeg"
             };
             equipos.Add(LDU);
 
@@ -44,6 +45,7 @@ namespace HerreraR_TallerLigaPro.Repositorios
                 PartidosGanados = 6,
                 PartidosEmpatados = 3,
                 PartidosPerdidos = 1,
+                ImagenEquipo = "Barcelona.jpeg"
             };
             equipos.Add(Barcelona);
 
@@ -55,8 +57,33 @@ namespace HerreraR_TallerLigaPro.Repositorios
                 PartidosGanados = 3,
                 PartidosEmpatados = 6,
                 PartidosPerdidos = 1,
+                ImagenEquipo = "Emelec.jpg"
             };
             equipos.Add(Emelec);
+
+            Equipo Nacional = new Equipo
+            {
+                Id = 4,
+                Nombre = "Nacional",
+                PartidosJugados = 10,
+                PartidosGanados = 6,
+                PartidosEmpatados = 1,
+                PartidosPerdidos = 3,
+                ImagenEquipo = "Nacional.jpg"
+            };
+            equipos.Add(Nacional);
+
+            Equipo IDV = new Equipo
+            {
+                Id = 3,
+                Nombre = "IDV",
+                PartidosJugados = 10,
+                PartidosGanados = 3,
+                PartidosEmpatados = 5,
+                PartidosPerdidos = 2,
+                ImagenEquipo = "IDV.jpeg"
+            };
+            equipos.Add(IDV);
 
             return equipos;
         }

@@ -11,41 +11,26 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="EditarEquipo">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>           
             <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PartidosJugados" class="control-label"></label>
+                <label class="control-label">Cantidad de Partidos Jugados</label>
                 <input asp-for="PartidosJugados" class="form-control" />
                 <span asp-validation-for="PartidosJugados" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PartidosGanados" class="control-label"></label>
+                <label class="control-label">Cantidad de Partidos Ganados</label>
                 <input asp-for="PartidosGanados" class="form-control" />
                 <span asp-validation-for="PartidosGanados" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PartidosEmpatados" class="control-label"></label>
+                <label class="control-label">Cantidad de Partidos Empatados</label>
                 <input asp-for="PartidosEmpatados" class="form-control" />
                 <span asp-validation-for="PartidosEmpatados" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PartidosPerdidos" class="control-label"></label>
+                <label class="control-label">Cantidad de Partidos Perdidos</label>
                 <input asp-for="PartidosPerdidos" class="form-control" />
                 <span asp-validation-for="PartidosPerdidos" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Puntos" class="control-label"></label>
-                <input asp-for="Puntos" class="form-control" />
-                <span asp-validation-for="Puntos" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
@@ -55,7 +40,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="ListaEquipos">Back to List</a>
 </div>
 
 @section Scripts {

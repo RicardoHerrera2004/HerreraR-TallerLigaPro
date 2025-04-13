@@ -5,6 +5,8 @@ namespace HerreraR_TallerLigaPro.Models
 {
     public class Equipo
     {
+        [DisplayName("Imagen del equipo ")]
+        public string ImagenEquipo { get; set; }
         [Key]
         public int Id { get; set; }
         [MaxLength(100)]
