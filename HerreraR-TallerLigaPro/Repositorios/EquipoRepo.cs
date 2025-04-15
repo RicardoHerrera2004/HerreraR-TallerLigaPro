@@ -70,11 +70,12 @@ namespace HerreraR_TallerLigaPro.Repositorios
                 };
             }
         }
-
-        //Codigo generado por IA para la función ascendiente de los puntos de los equipos
+        
         public List<Equipo> DevuelveListadoEquipos()
         {
             return ListaEquipo
+
+           //Codigo investigado con IA para la función ascendiente de los puntos de los equipos
            .OrderByDescending(e => e.Puntos) 
            .ToList();
         }
@@ -109,7 +110,8 @@ namespace HerreraR_TallerLigaPro.Repositorios
             return ListaEquipo.FirstOrDefault(e => e.Id == id);
         }
 
-        public bool CrearEquipo()
+        //Funciones no utilizadas actualmente en el programa
+        /*public bool CrearEquipo()
         {
             throw new NotImplementedException();
         }
@@ -117,6 +119,6 @@ namespace HerreraR_TallerLigaPro.Repositorios
         public bool EliminarEquipo()
         {
             throw new NotImplementedException();
-        }
+        }*/
     }
 }

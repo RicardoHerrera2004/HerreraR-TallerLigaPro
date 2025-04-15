@@ -31,5 +31,21 @@ namespace HerreraR_TallerLigaPro.Models
                 return puntos;
             }
         }
+
+        //Metodo para validar los partidos ingresados en el formulario
+        public bool ValidarPartidos()
+        {
+            return (PartidosEmpatados + PartidosGanados + PartidosPerdidos) == PartidosJugados;
+        }
+
+        public string ObtenerErrorPartidos()
+        {
+            int TotalPartidos = PartidosGanados + PartidosEmpatados + PartidosPerdidos;
+            if (TotalPartidos != PartidosJugados)
+            {
+                return "La suma de los partidos no coinciden, ingrese correctamente los datos de los partidos";
+            }
+            return null;
+        }
     }
 }

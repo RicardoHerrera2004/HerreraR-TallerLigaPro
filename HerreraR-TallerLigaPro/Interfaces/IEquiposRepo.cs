@@ -6,9 +6,12 @@ namespace HerreraR_TallerLigaPro.Interfaces
     {
         List<Equipo> DevuelveListadoEquipos();
         Equipo DevuelveInfoEquipo(int Id);
-        bool CrearEquipo();
+       
         bool ActualizarEquipo(Equipo equipo);
-        bool EliminarEquipo();
         Equipo ObtenerEquipoPorId(int id);
+        
+        //Estas dos funciones no están siendo utilizadas actualmente en el programa
+        /*bool CrearEquipo();
+        bool EliminarEquipo();*/
     }
 }

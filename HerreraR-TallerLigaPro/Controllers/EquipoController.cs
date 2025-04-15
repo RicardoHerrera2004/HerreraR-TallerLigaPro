@@ -29,6 +29,14 @@ namespace HerreraR_TallerLigaPro.Controllers
         [HttpPost]
         public IActionResult EditarEquipo(Equipo equipo)
         {
+            
+            //Validar el ingreso de los equipo
+             if(!equipo.ValidarPartidos())
+            {
+                ViewBag.MensajeError = equipo.ObtenerErrorPartidos();
+                return View(equipo);
+            }    
+            
             bool actualizado = repository.ActualizarEquipo(equipo);
 
             if (actualizado)
@@ -41,6 +49,14 @@ namespace HerreraR_TallerLigaPro.Controllers
         [HttpPost]
         public IActionResult ActualizarEquipo(Equipo equipo)
         {
+
+            //Validar el ingreso de los equipo
+             if (!equipo.ValidarPartidos())
+            {
+                ViewBag.MensajeError = equipo.ObtenerErrorPartidos();
+                return View(equipo);
+            } 
+
             bool actualizado = repository.ActualizarEquipo(equipo);
 
             if (actualizado)
